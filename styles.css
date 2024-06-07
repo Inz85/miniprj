@@ -1,0 +1,35 @@
+/* 기본 설정 */
+.image-container {
+    position: relative;
+    /* display: inline-block; */
+}
+
+/* 이미지 스타일링 */
+.image-container img {
+    /* display: block; */
+    transition: opacity 0.3s ease;
+}
+
+/* 텍스트 오버레이 스타일링 */
+.image-container .overlay-text {
+    position: absolute;
+    top: 45%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px gray;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 이미지에 마우스를 올렸을 때 스타일링 */
+.image-container:hover img {
+    opacity: 0.4;
+}
+
+.image-container:hover .overlay-text {
+    opacity: 1;
+}
